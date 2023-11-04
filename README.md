@@ -1,5 +1,5 @@
 # 4 Light Distance Shadows
-Using multiple directional lights to acheive shadows at varying distances and sizes.
+Using multiple directional lights to achieve shadows at varying distances and sizes.
 
 Video talking about this is posted here:
 https://www.youtube.com/watch?v=ZWVVXWznAVo
