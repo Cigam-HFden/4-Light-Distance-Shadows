@@ -1,0 +1,280 @@
+[gd_scene load_steps=8 format=3 uid="uid://oihp2qm87mro"]
+
+[ext_resource type="PackedScene" uid="uid://chvtaf85uclfu" path="res://boxmesh.tscn" id="2_rlte8"]
+[ext_resource type="PackedScene" uid="uid://b34ux6qxkgg6" path="res://teapot.tscn" id="2_uvy3p"]
+[ext_resource type="PackedScene" uid="uid://dgv0mo3gocdpt" path="res://player.tscn" id="3_pa5v4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a5lok"]
+
+[sub_resource type="Sky" id="Sky_2jj6a"]
+sky_material = SubResource("ProceduralSkyMaterial_a5lok")
+
+[sub_resource type="Environment" id="Environment_f0po2"]
+background_mode = 2
+sky = SubResource("Sky_2jj6a")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tmlv"]
+albedo_color = Color(0.811765, 1, 0.996078, 1)
+
+[node name="main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_f0po2")
+
+[node name="Directional Lights" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+
+[node name="DL 6" type="DirectionalLight3D" parent="Directional Lights"]
+visible = false
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.25
+directional_shadow_max_distance = 6.0
+directional_shadow_pancake_size = 0.1
+
+[node name="1 DL 7" type="DirectionalLight3D" parent="Directional Lights"]
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.25
+directional_shadow_max_distance = 7.0
+directional_shadow_pancake_size = 14.0
+
+[node name="2 DL 54" type="DirectionalLight3D" parent="Directional Lights"]
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.5
+directional_shadow_max_distance = 54.0
+directional_shadow_pancake_size = 100.0
+
+[node name="3 DL 180" type="DirectionalLight3D" parent="Directional Lights"]
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.75
+directional_shadow_max_distance = 180.0
+directional_shadow_pancake_size = 400.0
+
+[node name="DL 350" type="DirectionalLight3D" parent="Directional Lights"]
+visible = false
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.75
+directional_shadow_max_distance = 350.0
+directional_shadow_pancake_size = 50.0
+
+[node name="DL 540" type="DirectionalLight3D" parent="Directional Lights"]
+visible = false
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.75
+directional_shadow_max_distance = 540.0
+directional_shadow_pancake_size = 700.0
+
+[node name="DL 1000" type="DirectionalLight3D" parent="Directional Lights"]
+visible = false
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 1.0
+directional_shadow_max_distance = 1000.0
+directional_shadow_pancake_size = 1000.0
+
+[node name="4 DL 1200" type="DirectionalLight3D" parent="Directional Lights"]
+light_energy = 0.25
+light_indirect_energy = 0.25
+light_bake_mode = 1
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_mode = 0
+directional_shadow_split_1 = 0.005
+directional_shadow_split_2 = 0.01
+directional_shadow_split_3 = 0.02
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 1.0
+directional_shadow_max_distance = 1200.0
+directional_shadow_pancake_size = 300.0
+
+[node name="PSSM Directional Lights" type="Node3D" parent="."]
+visible = false
+
+[node name="PDL 20" type="DirectionalLight3D" parent="PSSM Directional Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+light_energy = 0.25
+light_indirect_energy = 0.25
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_split_1 = 0.3
+directional_shadow_split_2 = 0.35
+directional_shadow_split_3 = 0.4
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.25
+directional_shadow_max_distance = 20.0
+directional_shadow_pancake_size = 0.5
+
+[node name="PDL 200" type="DirectionalLight3D" parent="PSSM Directional Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+light_energy = 0.25
+light_indirect_energy = 0.25
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_split_1 = 0.3
+directional_shadow_split_2 = 0.35
+directional_shadow_split_3 = 0.4
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.5
+directional_shadow_pancake_size = 100.0
+
+[node name="PDL 800" type="DirectionalLight3D" parent="PSSM Directional Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+light_energy = 0.25
+light_indirect_energy = 0.25
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_split_1 = 0.3
+directional_shadow_split_2 = 0.35
+directional_shadow_split_3 = 0.4
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 0.75
+directional_shadow_max_distance = 800.0
+directional_shadow_pancake_size = 100.0
+
+[node name="PDL 4000" type="DirectionalLight3D" parent="PSSM Directional Lights"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
+light_energy = 0.25
+light_indirect_energy = 0.25
+shadow_enabled = true
+shadow_bias = 0.35
+shadow_normal_bias = 0.35
+shadow_blur = 0.35
+directional_shadow_split_1 = 0.3
+directional_shadow_split_2 = 0.35
+directional_shadow_split_3 = 0.4
+directional_shadow_blend_splits = true
+directional_shadow_fade_start = 1.0
+directional_shadow_max_distance = 4000.0
+directional_shadow_pancake_size = 500.0
+
+[node name="Test Objects" type="Node3D" parent="."]
+
+[node name="box tiny" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 5.47948, 1.75435, 2)
+
+[node name="box tiny2" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025, 6.17948, 1.75435, 2)
+
+[node name="box small" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 0)
+
+[node name="box large" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -10, 8, 24)
+
+[node name="box large2" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -26, 24, 24)
+
+[node name="box large3" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 8, 8, -1484)
+
+[node name="box large4" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -8, 24, -1484)
+
+[node name="box sky" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 2000, 500)
+
+[node name="teapot tiny" parent="Test Objects" instance=ExtResource("2_uvy3p")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 5.8, 1.7, 2)
+
+[node name="teapot tiny2" parent="Test Objects" instance=ExtResource("2_uvy3p")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 6.4, 1.7, 2)
+
+[node name="teapot large" parent="Test Objects" instance=ExtResource("2_uvy3p")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 14, 8, 2)
+
+[node name="teapot large2" parent="Test Objects" instance=ExtResource("2_uvy3p")]
+transform = Transform3D(30, 0, 0, 0, 30, 0, 0, 0, 30, 46, 19, 2)
+
+[node name="ground" parent="Test Objects" instance=ExtResource("2_rlte8")]
+transform = Transform3D(2500, 0, 0, 0, 1, 0, 0, 0, 2500, 0, -1, 0)
+
+[node name="MeshInstance3D" parent="Test Objects/ground" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_4tmlv")
+
+[node name="Player" parent="." instance=ExtResource("3_pa5v4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 35.5)
+
+[editable path="Test Objects/ground"]

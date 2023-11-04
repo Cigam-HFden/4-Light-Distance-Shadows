@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b34ux6qxkgg6"]
+
+[ext_resource type="Shader" path="res://teapot.gdshader" id="1_xvqir"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c3bvw"]
+render_priority = 0
+shader = ExtResource("1_xvqir")
+shader_parameter/seed_variation = 0.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_umn2w"]
+material = SubResource("ShaderMaterial_c3bvw")
+size = Vector3(1.6, 1.25, 1.25)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_umn2w")
